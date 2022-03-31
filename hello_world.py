@@ -1,3 +1,4 @@
+# testing log files and adding random numbers 
 import logging
 import sys
 import random 
