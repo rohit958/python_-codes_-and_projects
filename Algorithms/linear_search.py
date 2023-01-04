@@ -1,4 +1,10 @@
 import array as arr
+'''
+Binary search using iteration
+time complexity-O(n)
+space complexity-O(n)
+best case(1)
+'''
 
 numbers=arr.array('i',[1,2,3,4,5,6,7,77,54,66,45])
 
@@ -7,8 +13,7 @@ def linear_search(element):
         if numbers[x]==element:
             return x
     return -1
-    
-       
+          
 if __name__=="__main__":
     ele=int(input("give anumber to search:"))
 
