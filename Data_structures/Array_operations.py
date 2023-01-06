@@ -19,9 +19,7 @@ def transversal(arr):
 
 
 def insertion(element,index):
-    
-     
-
+    pass
     
 
 def deletion():
