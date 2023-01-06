@@ -1,0 +1,57 @@
+		Hive-
+ Apache Hive helps with querying and managing large datasets real fast.
+ Hive evolved as a data warehousing solution built on top of Hadoop Map-Reduce framework.
+ It is developed on top of Hadoop.
+ In Hive, tables and databases are created first and then data is loaded into these tables.
+ Hive as data warehouse designed for managing and querying only structured data that is stored in tables.
+ Hive supports four file formats those are TEXTFILE, SEQUENCEFILE, ORC and RCFILE (Record Columnar File). 
+ 
+ 
+ Limitations of Hive:
+
+• Hive is not designed for Online transaction processing (OLTP ), it is only used for the Online Analytical Processing.
+
+• Hive supports overwriting or apprehending data, but not updates and deletes.
+
+Q.Why Hive is used inspite of Pig?
+
+Ans.The following are the reasons why Hive is used in spite of Pig’s availability:
+
+    Hive-QL is a declarative language line SQL, PigLatin is a data flow language.
+    Pig: a data-flow language and environment for exploring very large datasets.
+    Hive: a distributed data warehouse.
+----------------------------------------------------------------------------------------------------------
+
+"An ad hoc query is a single query not included in a stored procedure and not parameterized or prepared."
+
+Components of Hive:
+	
+	Metastore :
+
+	Hive stores the schema of the Hive tables in a Hive Metastore. 
+	Metastore is used to hold all the information about the tables and partitions that are in the warehouse.
+	
+	SerDe :
+
+	Serializer, Deserializer gives instructions to hive on how to process a record.
+---------------------------------------------------------------------------------------------------------------
+
+DDL Command		Function
+CREATE			It is used to create a table or Database
+
+SHOW			It is used to show Database, Table, Properties, etc
+
+ALTER			It is used to make changes to the existing table
+
+DESCRIBE		It describes the table columns
+
+TRUNCATE		Used to permanently truncate and delete the rows of table
+
+DELETE			Deletes the table data, but, can be restored
+
+----------------------------------------------------------------------------------------------------------
+Hive Consists of Mainly 3 core parts
+
+    Hive Clients
+    Hive Services
+    Hive Storage and Computing

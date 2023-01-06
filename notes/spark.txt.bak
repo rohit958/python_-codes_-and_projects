@@ -1,0 +1,44 @@
+spark
+
+------------------------------------------------------------------------
+ word count(python)
+
+text_file = sc.textFile("hdfs://...")
+counts = text_file.flatMap(lambda line: line.split(" ")) \
+             .map(lambda word: (word, 1)) \
+             .reduceByKey(lambda a, b: a + b)
+counts.saveAsTextFile("hdfs://...")
+------------------------------------------------------------------------
+
+text search(python)
+
+
+textFile = sc.textFile("hdfs://...")
+
+# Creates a DataFrame having a single column named "line"
+df = textFile.map(lambda r: Row(r)).toDF(["line"])
+errors = df.filter(col("line").like("%ERROR%"))
+# Counts all the errors
+errors.count()
+# Counts errors mentioning MySQL
+errors.filter(col("line").like("%MySQL%")).count()
+# Fetches the MySQL errors as an array of strings
+errors.filter(col("line").like("%MySQL%")).collect()
+
+text search (scala)
+
+
+
+val textFile = sc.textFile("hdfs://...")
+
+// Creates a DataFrame having a single column named "line"
+val df = textFile.toDF("line")
+val errors = df.filter(col("line").like("%ERROR%"))
+// Counts all the errors
+errors.count()
+// Counts errors mentioning MySQL
+errors.filter(col("line").like("%MySQL%")).count()
+// Fetches the MySQL errors as an array of strings
+errors.filter(col("line").like("%MySQL%")).collect()
+
+------------------------------------------------------------------------

@@ -1,0 +1,31 @@
+--NoSQL
+--------------------------------
+--Document Database
+MongoDB
+CouchDB
+
+
+--------------------------------
+--Key-Value Database
+
+DynamoDB
+Redis
+
+
+--------------------------------
+--Wide-Column Store
+
+Hbase
+Cassandera
+
+
+
+--------------------------------
+--Graph Database
+
+Dgraph
+OrientDB
+
+
+
+--------------------------------

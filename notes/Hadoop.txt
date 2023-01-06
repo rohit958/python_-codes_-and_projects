@@ -1,0 +1,301 @@
+Hadoop - Big Data analytics tools
+----------------------------------------------------------------------------------------------
+Hadoop architechture-
+
+Hadoop Distributed File System (HDFS) – It is the storage layer of Hadoop.
+Map-Reduce – It is the data processing layer of Hadoop.
+YARN – It is the resource management layer of Hadoop.
+
+---------------------------------------------------------------------------------------------
+	HDFS-
+	
+	Short for Hadoop Distributed File System provides for distributed storage for Hadoop. 
+	HDFS has a master-slave topology. Master is a high-end machine where as slaves are inexpensive computers. 
+	The Big Data files get divided into the number of blocks. Hadoop stores these blocks in a distributed fashion on the cluster of slave nodes. 
+	On the master, we have metadata stored.
+	
+	 HDFS has two daemons-
+	
+	 1.NameNode : NameNode performs following functions –
+
+    NameNode Daemon runs on the master machine.
+    It is responsible for maintaining, monitoring and managing DataNodes.
+    It records the metadata of the files like the location of blocks, file size, permission, hierarchy etc.
+    Namenode captures all the changes to the metadata like deletion, creation and renaming of the file in edit logs.
+    It regularly receives heartbeat and block reports from the DataNodes.
+      
+	 2.DataNode: The various functions of DataNode are as follows –
+
+    DataNode runs on the slave machine.
+    It stores the actual business data.
+    It serves the read-write request from the user.
+    DataNode does the ground work of creating, replicating and deleting the blocks on the command of NameNode.
+    After every 3 seconds, by default, it sends heartbeat to NameNode reporting the health of HDFS.
+
+Under conventional Hadoop storage replication factor of 3 is default
+HDFS supports hierarchical file organization.
+ One can create, remove, move or rename a file. NameNode maintains file system Namespace. 
+ NameNode records the changes in the Namespace. It also stores the replication factor of the file.
+
+
+------------------------------------------------------------------------------------------------------------
+
+	MapReduce-
+
+	It is the data processing layer of Hadoop. It processes data in two phases.
+
+	They are:-
+
+	 1.Map Phase- This phase applies business logic to the data. 
+	 The input data gets converted into key-value pairs.
+
+	 2.Reduce Phase- The Reduce phase takes as input the output of Map Phase. 
+	 It applies aggregation based on the key of the key-value pairs.
+	
+	Map-Reduce works in the following way:
+
+     The client specifies the file for input to the Map function. It splits it into tuples
+     Map function defines key and value from the input file. 
+	 The output of the map function is this key-value pair.
+     MapReduce framework sorts the key-value pair from map function.
+     The framework merges the tuples having the same key together.
+     The reducers get these merged key-value pairs as input.
+     Reducer applies aggregate functions on key-value pair.
+     The output from the reducer gets written to HDFS.
+	
+	
+----------------------------------------------------------------------------------------------------------
+
+https://data-flair.training/blogs/wp-content/uploads/sites/2/2016/09/resource-manager1-1.jpg
+
+	YARN-Short for Yet Another Resource Locator
+	
+	 Resource Manager
+	  
+    Resource Manager runs on the master node.
+    It knows where the location of slaves (Rack Awareness).
+    It is aware about how much resources each slave have.
+    Resource Scheduler is one of the important service run by the Resource Manager.
+    Resource Scheduler decides how the resources get assigned to various tasks.
+    Application Manager is one more service run by Resource Manager.
+    Application Manager negotiates the first container for an application.
+    Resource Manager keeps track of the heart beats from the Node Manager.
+
+     Node Manager
+	
+    It runs on slave machines.
+    It manages containers. Containers are nothing but a fraction of Node Manager’s resource capacity
+    Node manager monitors resource utilization of each container.
+    It sends heartbeat to Resource Manager.
+    
+	 Job Submitter
+	
+    The client submits the job to Resource Manager.
+    Resource Manager contacts Resource Scheduler and allocates container.
+    Now Resource Manager contacts the relevant Node Manager to launch the container.
+    Container runs Application Master.
+	
+----------------------------------------------------------------------------------------------------------
+
+Hadoop Flavors
+
+This section of the Hadoop Tutorial talks about the various flavors of Hadoop.
+
+    Apache – Vanilla flavor, as the actual code is residing in Apache repositories.
+    Hortonworks – Popular distribution in the industry.
+    Cloudera – It is the most popular in the industry.
+    MapR – It has rewritten HDFS and its HDFS is faster as compared to others.
+    IBM – Proprietary distribution is known as Big Insights.
+	
+----------------------------------------------------------------------------------------------------------
+
+Top Hadoop Commands
+
+1. mkdir: to create a directory on an HDFS
+	
+	$ hadoop fs -mkdir /user/hadoop/
+
+2. ls: used for listing the directories present under a specific directory in an HDFS system
+	
+	$ hadoop fs -ls [-d] [-h] [-R]
+	
+	–d 	= The option is used to list the directories as plain files
+	–h 	= The option is used to format the sizes of files into a human-readable manner than just number of bytes
+	–R  = The option is used to recursively list the contents of directories
+	
+3. put: used to copy files from the local file system to the HDFS filesystem.
+	
+	$ hadoop fs -put [-f] [-p] ...
+	$ hadoop fs -put sample.txt /user/data/
+	
+	–f = This command will not work if the file already exists unless the –f flag is given to the command
+	–p = The flag preserves the access, modification time, ownership and the mode.
+	
+4. get: This command is used to copy files from HDFS file system to the local file system.
+	
+	$ hadoop fs -get [-f] [-p]
+	$ hadoop fs -get /user/data/sample.txt workspace/
+	
+5. cat:(C-D) Used for displaying the contents of a file on the console.
+	
+	$ hadoop fs -cat /user/data/sampletext.txt
+	
+6. cp: It is used for copying files from one directory to another directory within the HDFS file system.
+	
+	$ hadoop fs -cp /user/data/sample1.txt /user/hadoop1
+	$ hadoop fs -cp /user/data/sample2.txt /user/test/in1
+	
+7. mv: It is used for moving a file from one directory to another directory within the HDFS file system
+`	
+	$ hadoop fs -mv /user/hadoop/sample1.txt /user/text/
+
+8. rm: It is used for removing a file from the HDFS file system. The command –rmr can be used to delete files recursively.
+	
+	–rm 		Only files can be removed but directories can’t be deleted by this command
+	–rm r 		Recursively remove directories and files
+	–skipTrash 	used to bypass the trash then it immediately deletes the source
+	–f  		mention that if there is no file existing
+	–rR 		used to recursively delete directories
+	
+	$ hadoop fs -rm [-f] [-r|-R] [-skipTrash]
+	$ hadoop fs -rm -r /user/test/sample.txt
+
+9. getmerge: This is the most important and the most useful command on the HDFS filesystem when trying to read the contents of a MapReduce job or PIG job’s output files. 
+This is used for merging a list of files in a directory on the HDFS filesystem into a single local file on the local filesystem.
+	
+	$ hadoop fs -getmerge /user/data
+
+10. setrep: This command is used to change the replication factor of a file to a specific count instead of the default replication factor for the remaining in the HDFS file system. 
+	–w 	used to request the command to wait for the replication to be completed
+	–R 	used to accept for backward capability and has no effect
+	
+	$ hadoop fs -setrep [-R] [-w]
+	$ hadoop fs -setrep -R /user/hadoop/
+
+11. touchz:(0-Touch) This command can be used to create a file of zero bytes size in HDFS filesystem.
+	
+	$ hadoop fs -touchz URI
+	
+12. test: This command is used to test an HDFS file’s existence of zero length of the file or whether if it is a directory or not.
+	–d 	used to check whether if it is a directory or not, returns 0 if it is a directory
+	–e  used to check whether they exist or not, returns 0 if the exists
+	–f  used to check whether there is a file or not, returns 0 if the file exists
+	–s 	used to check whether the file size is greater than 0 bytes or not, returns 0 if the size is greater than 0 bytes
+	–z 	used to check whether the file size is zero bytes or not. If the file size is zero bytes, then returns 0 or else returns 1.
+    
+	$ hadoop fs -test -[defsz] /user/test/test.txt
+
+13. expunge: Empty recycle bin.
+	
+	$ hadoop fs –expunge
+	user@ubuntu1:~$ hadoop fs –expunge
+
+14. appendToFile:This command appends the contents of all the given local files to the provided destination file on the HDFS filesystem. The destination file will be created if it is not existing earlier. 
+	
+	$ hadoop fs -appendToFile
+	user@ubuntu1:~$ hadoop fs -appendToFile derby.log data.tsv /in/appendfile
+	
+15. tail: This command is used to show the last 1KB of the file.
+	–f  	used to the show appended data as the file grows
+	$ hadoop fs -tail [-f]
+	
+16. Stat: used to print the statistics about the file/directory in the specified format. 
+
+Format accepts file size in 
+
+blocks 												(%b) 
+the group name of the owner (%g) and the file name  (%n) 
+block size 											(%o) 
+replication 										(%r)
+the username of the owner 							(%u) 
+modification date 									(%y, %Y)
+	
+	$ hadoop fs -stat [format]
+	user@tri03ws-386:~$ hadoop fs -stat /in/appendfile
+    2014-11-26 04:57:04
+
+	user@tri03ws-386:~$ hadoop fs -stat %Y /in/appendfile
+	1416977824841
+
+	user@tri03ws-386:~$ hadoop fs -stat %b /in/appendfile
+	20981
+
+	user@tri03ws-386:~$ hadoop fs -stat %r /in/appendfile
+	1
+
+	user@tri03ws-386:~$ hadoop fs -stat %o /in/appendfile
+	134217728
+
+17. setfattr: This command sets an extended attribute name and value for a file or directory on the HDFS filesystem.
+	–n 	used to provide the extended attribute name
+	–x 	used to remove the extended attribute, file or directory
+	–v 	used to provide the extended attribute value.
+	
+	Encoding-
+	double quotes("") = string
+	0x or 0X		  = hexadecimal number
+	0s or 0S          = Base64 
+	
+	$ hadoop fs -setfattr {-n name [-v value] | -x name}
+	
+18. df: This command is used to show the capacity, free and used space available on the HDFS filesystem. 
+	–h 	used to format the sizes of the files in a human-readable manner rather than the number of bytes.
+	
+	$ hadoop fs -df [-h] [ ...]
+
+19. du: used to show the amount of space in bytes that have been used by the files
+	–s 	used to show the size of each individual file that matches the pattern, shows the total (summary) size
+	–h 	used to format the sizes of the files in a human-readable manner rather than the number of bytes.
+	
+	$ hadoop fs -du [-s] [-h]
+
+20. count: used to count the number of directories, files, and bytes under the path that matches the provided file pattern.
+	
+	$ hadoop fs -count [-q]
+	
+21. chgrp: This command is used to change the group of a file or a path.
+
+	$ hadoop fs -chgrp [-R] groupname
+	
+22. chmod: Used to change the permissions of a file
+–R 	Used to modify the files recursively and it is the only option that is being supported currently
+	
+	$ hadoop fs -chmod [-R] PATH	
+
+
+23. chown(change owner):This command is used to change the owner and group of a file
+–R 	Modifies the files recursively and is the only option that is being supported currently
+
+	$ hadoop fs -chown [-R] [OWNER][:[GROUP]] PATH
+
+24. balancer: This command is used to run the cluster-balancing utility
+	hadoop balancer [-threshold <threshold>]
+	hadoop balancer -threshold 20
+
+25. Datanode: This command is used to run the HDFS DataNode service, which coordinates storage on each slave node. Before using the -rollback you need to stop the DataNode
+-rollback 	The DataNode is rolled back to the previous version.
+	hadoop datanode [-rollback]
+	hadoop datanode –rollback
+	
+26. dfsadmin:This command is used to run a number of Hadoop Distributed File System (HDFS) administrative operations.	
+	hadoop dfsadmin [GENERIC_OPTIONS] [-report] [-safemode enter | leave | get | wait] [-refreshNodes] [-finalizeUpgrade] [-upgradeProgress status | details | force] [-metasave filename][-setQuota<quota><dirname>…<dirname>][-clrQuota <dirname>…<dirname>] [-restoreFailedStorage true|false|check] [-help [cmd]]
+	
+27. Secondary namenode:This command is used to run the secondary NameNode. 	
+-checkpoint 	a checkpoint on the secondary NameNode is performed if the size of the EditLog is greater than or equal to fs.checkpoint.size
+-force 	        a checkpoint is performed regardless of the EditLog size;
+–geteditsize 	EditLog size is displayed
+
+	hadoop secondarynamenode [-checkpoint [force]] | [-geteditsize]
+
+28. tasktracker: This command is used to run a MapReduce TaskTracker node.
+	hadoop tasktracker
+	hadoop tasktracker
+	
+29. jobtracker: This command is used to run the MapReduce JobTracker node, which coordinates the data processing system for Hadoop. 
+-dumpConfiguration 	Used by the JobTracker and the queue configuration in JSON format are written to standard output.
+
+	hadoop jobtracker [-dumpConfiguration]
+
+30. daemonlog: This command is used to get or set the log level for each daemon. The changes reflect only when the daemon restarts.
+	hadoop daemonlog -getlevel <host:port> <name>; hadoop daemonlog -setlevel <host:port> <name> <level>
+	Hadoop daemonlog -getlevel 10.250.1.15:50030 org.apache.hadoop.mapred.JobTracker; hadoop daemonlog -setlevel 10.250.1.15:50030 org.apache.hadoop.mapred.JobTracker DEBUG

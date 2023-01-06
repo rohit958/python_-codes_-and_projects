@@ -1,0 +1,43 @@
+						slowly changing dimentions type tables
+-----------------------------------------------------------------------
+		type 1
+
+ For this type of slowly changing dimension you simply "overwrite" the existing data values with new data values. 
+ This makes the updating of the dimension easy and limits the growth of the dimension table to only new records. 
+ The drawback of this is you lose the historical value of the data.
+
+
+
+-----------------------------------------------------------------------
+		type 2
+
+ This is the most commonly used type of slowly changing dimension. 
+ For this type of slowly changing dimension, add a new record encompassing the change and mark the old record as inactive. 
+ This allows the fact table to continue to use the old version of the data for historical reporting purposes leaving the changed data in the new record to only impact the fact data from that point forward. 
+ 
+ "Using of Active and Inactive column."
+ 
+ 
+
+-----------------------------------------------------------------------
+		type 3
+
+ This is a seldom-used type of slowly changing dimension. 
+ In this type of slowly changing dimension, you add a second column to store the most recent past value of the column(s) you wish to be able to report on. 
+ When the data is updated the existing value is “moved” to the column defined to store the previous past value and the new value is placed into the reportable column. 
+ This allows you the ability to look back at what the value of the data was previously. 
+ 
+ "Using of of previous data column."
+
+
+
+-----------------------------------------------------------------------
+		type 6
+		
+ A Type 6 SCD is a very rarely used SCD. In this instance, you combine SCD Type 1, SCD Type 2 and SCD Type 3 (1 + 2 + 3 = 6).
+ To create a Type 6 SCD you would start with a Type 2, add columns for the records you wish to capture the current value as well as the historical value.
+ This allows one to filter or group on the Type 2 value in effect when the measure occurred or the current attribute value.
+ 
+ 
+		
+ https://www.nuwavesolutions.com/slowly-changing-dimensions/

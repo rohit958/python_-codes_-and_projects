@@ -1,0 +1,28 @@
+Hi , thanks for this video just want to share in case other audiences got same problem as mine. I suspect because of my version of apache-airflow is differnt so
+
+so instruction is needed some adjustment.
+
+
+
+root@4GDGTT2:/home/ubuntu# python3 -m pip list
+
+Package                         Version
+
+------------------------------- --------------------
+
+alembic                         1.4.3
+
+apache-airflow                  2.0.0
+
+..
+
+------------------------------- --------------------
+
+step 4# python3 -m pip install apache-airflow
+
+step 5# airflow db init < use this due to "airflow initdb" is not work for me.
+ >
+step 5a# airflow users create --role Admin --username admin --email email@mail.com --firstname fname --lastname lname --password pwd < I need this line to create user before get into local host interface page.
+ >
+step 6# airflow webserver -p 8080 
+
