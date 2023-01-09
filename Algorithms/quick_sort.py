@@ -3,7 +3,7 @@ Quick Sort Algorithm
 
 Space Complexity-
 Time Complexity-O(NLog(n))
-Worst TimeComplexity= O(log(n^2))
+Worst TimeComplexity= O(n^2)
 """
 
 data_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
@@ -54,6 +54,6 @@ def PrintArray(text,arrray):
 
 
 if __name__ == '__main__':
-    PrintArray('before sorting: ', data_list)
+    ('before sorting: ', data_list)
     quickSort(data_list)
     PrintArray("after sorting: ", data_list)
