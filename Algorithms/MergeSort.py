@@ -34,14 +34,13 @@ def mergeSortedArrays(a, b, arr):
             i += 1
 
         else:
-            arr[k] =b[j]
+            arr[k] = b[j]
             j += 1
         k += 1
     while i < len_a:
         arr[k] = a[i]
         i += 1
         k += 1
-
 
     while j < len_b:
         arr[k] = b[j]
