@@ -1,10 +1,9 @@
 '''
 linked list  operations
 1-Transversal
-2-insertion
-3-deletion
-4-reverse
-5-search
+2-insertion at head, end and at position
+3-deletion  at head, end and at position
+4-search
 '''
 
 
