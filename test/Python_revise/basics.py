@@ -1,8 +1,7 @@
 a,b=2,3
 
 def swap(a,b):
-    temp=0
-    a=temp
+    temp=a
     a=b
     b=temp
 
