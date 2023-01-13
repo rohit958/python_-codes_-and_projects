@@ -33,8 +33,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
-  <component name="RunManager" selected="Python.testpyspark">
-    <configuration name="Linked_list" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Stack">
+    <configuration name="Queue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -46,7 +46,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_structures/Linked_list.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_structures/Queue.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,18 +142,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.da" />
-      <item itemvalue="Python.Linked_list" />
       <item itemvalue="Python.pandas_test" />
       <item itemvalue="Python.Stack" />
       <item itemvalue="Python.testpyspark" />
+      <item itemvalue="Python.Queue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Stack" />
+        <item itemvalue="Python.Queue" />
         <item itemvalue="Python.testpyspark" />
         <item itemvalue="Python.pandas_test" />
         <item itemvalue="Python.da" />
-        <item itemvalue="Python.Stack" />
-        <item itemvalue="Python.Linked_list" />
       </list>
     </recent_temporary>
   </component>
