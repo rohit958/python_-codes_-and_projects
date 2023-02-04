@@ -33,8 +33,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
-  <component name="RunManager" selected="Python.pysaprkavro">
-    <configuration name="JSON_Parsing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.linear_search">
+    <configuration name="avro_spark" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -42,11 +42,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data_Engineering" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sample_avro_file" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_Engineering/JSON_Parsing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sample_avro_file/avro_spark.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -55,7 +55,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PysparkJSON" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="binary_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,11 +63,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pyspark" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyspark/PysparkJSON.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithms/binary_search.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -76,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Queue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="linear_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,11 +84,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data_structures" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Algorithms" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_structures/Queue.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Algorithms/linear_search.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,19 +141,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.JSON_Parsing" />
-      <item itemvalue="Python.PysparkJSON" />
-      <item itemvalue="Python.Queue" />
-      <item itemvalue="Python.testpyspark" />
       <item itemvalue="Python.pysaprkavro" />
+      <item itemvalue="Python.testpyspark" />
+      <item itemvalue="Python.avro_spark" />
+      <item itemvalue="Python.binary_search" />
+      <item itemvalue="Python.linear_search" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.pysaprkavro" />
-        <item itemvalue="Python.PysparkJSON" />
+        <item itemvalue="Python.linear_search" />
+        <item itemvalue="Python.binary_search" />
+        <item itemvalue="Python.avro_spark" />
         <item itemvalue="Python.testpyspark" />
-        <item itemvalue="Python.JSON_Parsing" />
-        <item itemvalue="Python.Queue" />
+        <item itemvalue="Python.pysaprkavro" />
       </list>
     </recent_temporary>
   </component>
@@ -221,6 +221,11 @@
           <url>file://$PROJECT_DIR$/Data_structures/Linked_list.py</url>
           <line>48</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Algorithms/linear_search.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
