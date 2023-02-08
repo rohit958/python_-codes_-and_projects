@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
-  <component name="RunManager" selected="Python.linear_search">
+  <component name="RunManager" selected="Python.mex (1)">
     <configuration name="avro_spark" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,7 +97,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pysaprkavro" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mex (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,11 +105,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pyspark" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/Python_revise" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyspark/pysaprkavro.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/Python_revise/mex.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,20 +118,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testpyspark" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mex" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYSPARK_DRIVER_PYTHON" value="C:\Users\rohit\AppData\Local\Programs\Python\Python39\python.exe" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pyspark" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/Python_revise" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyspark/testpyspark.py" />
+      <option name="SCRIPT_NAME" value="D:\git\python_-codes_-and_projects\test\Python_revise\mex.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,19 +140,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.pysaprkavro" />
-      <item itemvalue="Python.testpyspark" />
       <item itemvalue="Python.avro_spark" />
       <item itemvalue="Python.binary_search" />
       <item itemvalue="Python.linear_search" />
+      <item itemvalue="Python.mex" />
+      <item itemvalue="Python.mex (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mex (1)" />
+        <item itemvalue="Python.mex" />
         <item itemvalue="Python.linear_search" />
         <item itemvalue="Python.binary_search" />
         <item itemvalue="Python.avro_spark" />
-        <item itemvalue="Python.testpyspark" />
-        <item itemvalue="Python.pysaprkavro" />
       </list>
     </recent_temporary>
   </component>
