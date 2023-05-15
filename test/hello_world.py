@@ -1,18 +1,14 @@
-# testing log files and adding random numbers 
-import logging
-import sys
-import random 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 
-logging.basicConfig(filename=r"D:\python_ codes_ and_projects\test\logfile.log",format="{asctime} {levelname:<8} {message}", style="{", encoding='UTF-8',level=logging.DEBUG)
+import numpy
 
 
-a=random.randint(0,10) 
-b=random.randint(10,15)
+def rshape(arr):
+    temp = numpy.array(arr)
+    temp.shape(3, 3)
+    return temp
 
-def add_num(p,q):
-    s=p+q
-    return s
 
-test= add_num(a,b)
-logging.debug('add: {} + {} = {}'.format(a, b, test))
-logging.info('code exceuted successfully!')
+arr = input.strip().split(" ")
+result = rshape(arr)
+print(arr)
