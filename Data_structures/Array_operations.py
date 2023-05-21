@@ -18,15 +18,44 @@ def transversal(arr):
         print(array[x],end=' ')
 
 
-def insertion(element,index):
-    pass
+def insertion(arr,element,index):
+    # if inserted at starting or in mid
+    temp=[]
+    if index ==0:
+        temp [0]=element
+        for x in arr :
+            temp [x+1]= arr[x]
+
+    elif index< size-1:
+        for x in arr:
+            temp[x]=arr[x]
+            if x == index:
+                temp[x]= element
+            elif x > index:
+                temp[x+1]=arr[x]
+    else:
+        #if index is at end
+        arr.append(element)
+
+    return temp
+
     
 
-def deletion():
+def deletion(arr, element, index):
+    # if deletetion is at end
+
+    # if deletion is at starting
     pass
 
-def reverse():
-    pass
+
+
+def reverse(arr):
+    temp=[]
+    for x in reversed(range(size)):
+        arr[x]=temp.append(x)
+
+    return temp
+
 
 
 
