@@ -51,14 +51,44 @@ class BinarySearchTreeNode:
             else:
                 return False
 
-    def find_max(self):
-        pass
-
-    def find_min(self):
-        pass
-
     def Calculate_sum(self):
         pass
+
+    def delete(self,val):
+        if val < self.data:
+            if self.left:
+                self.left.delete(val)
+
+        elif val > self.data:
+            if self.right:
+                self.right.delete(val)
+
+        else:
+            if self.left is None and self.right is None:
+                return None
+
+            elif self.left is None:
+                return self.right
+
+            elif self.right is None:
+                return self.left
+
+        min_val= self.right.find_min()
+        self.data =min_val
+        self.right = self.right.delete(min_val)
+
+        return self
+
+    def find_max(self):
+        if self.right is None:
+            return self.data
+        return self.right.find_max()
+
+    def find_min(self):
+        if self.left is None:
+            return self.data
+        return self.left.find_min()
+
 
 def build_tree(elements):
     root = BinarySearchTreeNode(elements[0])
@@ -68,8 +98,11 @@ def build_tree(elements):
 
 if __name__ == '__main__':
     Countries = ["INDIA","PAKISTAN","USA","CANADA","UK","ISRAEL","SRI LANKA","AUSTRALIA","UKRAINE","ARGENTINA"]
-    Countries_tree= build_tree(Countries)
+    Countries_tree = build_tree(Countries)
     print(Countries_tree.in_order_transversal())
+
+    Countries_tree.delete("UK")
+    print("after removing-UK:",Countries_tree.in_order_transversal())
 
 
 
