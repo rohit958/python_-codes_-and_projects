@@ -51,6 +51,14 @@ class BinarySearchTreeNode:
             else:
                 return False
 
+    def find_max(self):
+        pass
+
+    def find_min(self):
+        pass
+
+    def Calculate_sum(self):
+        pass
 
 def build_tree(elements):
     root = BinarySearchTreeNode(elements[0])
