@@ -4,29 +4,27 @@ class BinarySearchTreeNode:
         self.left = None
         self.right = None
 
-    def add_child(self,data):
+    def add_child(self, data):
         if data == self.data:
-            return # node already exists
+            return # node already exist
 
         if data < self.data:
-            # add data in left subtree
             if self.left:
-                self.add_child(data)
+                self.left.add_child(data)
             else:
-                self.left=BinarySearchTreeNode(data)
+                self.left = BinarySearchTreeNode(data)
         else:
-            # add data in right subtree
             if self.right:
-                self.add_child(data)
+                self.right.add_child(data)
             else:
                 self.right = BinarySearchTreeNode(data)
 
 
-    def in_order_tranversal(self):
+    def in_order_transversal(self):
         elements =[]
         # visit left tree
         if self.left:
-            elements += self.left.in_order_tranversal()
+            elements += self.left.in_order_transversal()
 
         # visit root node
         elements.append(self.data)
@@ -63,7 +61,7 @@ def build_tree(elements):
 if __name__ == '__main__':
     Countries = ["INDIA","PAKISTAN","USA","CANADA","UK","ISRAEL","SRI LANKA","AUSTRALIA","UKRAINE","ARGENTINA"]
     Countries_tree= build_tree(Countries)
-    print(Countries_tree.in_order_tranversal())
+    print(Countries_tree.in_order_transversal())
 
 
 
