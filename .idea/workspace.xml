@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="">
+    <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="dad">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithms/Bubble_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Bubble_sort.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_structures/Stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_structures/Stack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/hello_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/hello_world.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +47,7 @@
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="Python" />
     <property name="settings.editor.selected.configurable" value="advanced.settings" />
   </component>
-  <component name="RunManager" selected="Python.hello_world">
+  <component name="RunManager" selected="Python.create_text_file">
     <configuration name="Binary_search_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -130,7 +132,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hello_world" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="create_text_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,7 +144,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/hello_world.py" />
+      <option name="SCRIPT_NAME" value="D:\git\python_-codes_-and_projects\test\create_text_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -156,11 +158,11 @@
       <item itemvalue="Python.Graph" />
       <item itemvalue="Python.Binary_search_tree" />
       <item itemvalue="Python.casc" />
-      <item itemvalue="Python.hello_world" />
+      <item itemvalue="Python.create_text_file" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.hello_world" />
+        <item itemvalue="Python.create_text_file" />
         <item itemvalue="Python.casc" />
         <item itemvalue="Python.Binary_search_tree" />
         <item itemvalue="Python.Graph" />
@@ -177,6 +179,14 @@
       <option name="presentableId" value="Default" />
       <updated>1672897494189</updated>
     </task>
+    <task id="LOCAL-00001" summary="dad">
+      <created>1686892632971</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686892632971</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -203,6 +213,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="dad" />
+    <option name="LAST_COMMIT_MESSAGE" value="dad" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -254,14 +266,9 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Data_structures/casc.py</url>
-          <line>2</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test/hello_world.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="26" />
+          <line>12</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

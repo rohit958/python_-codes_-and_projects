@@ -36,7 +36,6 @@ if __name__ == '__main__':
 from collections import deque
 
 st = deque()
-
 st.append('Jetha lal')
 st.append('Hans raj hathi')
 st.append('Tarak Mehta')
