@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="dad">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms/Bubble_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms/Bubble_sort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_structures/Stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_structures/Stack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/hello_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/hello_world.py" afterDir="false" />
-    </list>
+    <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="create text file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686892632971</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create text file">
+      <created>1686897481934</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686897481934</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +216,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dad" />
-    <option name="LAST_COMMIT_MESSAGE" value="dad" />
+    <MESSAGE value="create text file" />
+    <option name="LAST_COMMIT_MESSAGE" value="create text file" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -266,7 +269,7 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/hello_world.py</url>
+          <url>file://$PROJECT_DIR$/test/create_text_file.py</url>
           <line>12</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
