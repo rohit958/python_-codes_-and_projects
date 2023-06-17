@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../AWS_GIT_repo/.idea/AWS_GIT_repo.iml" filepath="$PROJECT_DIR$/../AWS_GIT_repo/.idea/AWS_GIT_repo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python_-codes_-and_projects.iml" filepath="$PROJECT_DIR$/.idea/python_-codes_-and_projects.iml" />
     </modules>
   </component>
