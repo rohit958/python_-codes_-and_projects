@@ -1,5 +1,5 @@
 import os
-import datetime
+import datetime as dt
 
 global text
 text = """First of all I've no idea why I've been requested this answer. Anyways. 
@@ -12,7 +12,10 @@ text = """First of all I've no idea why I've been requested this answer. Anyways
 
 def create_text_file(text_str):
     try:
-        with open("D:\git\python_-codes_-and_projects\sample_text_files\File1.txt", "w") as file:
+        path="D:\git\python_-codes_-and_projects\sample_text_files"
+        date=dt.datetime.now()
+        file_name=path+'\File_'+ date.strftime("%x")+".txt"
+        with open(file_name, "w") as file:
             file.write(text_str)
             file.close()
         return "file created successfully"
