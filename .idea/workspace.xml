@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="s3 bucket create">
-      <change afterPath="$PROJECT_DIR$/sample_JSON/Govement_data/City_bus.JSON" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AWS_GIT_repo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_GIT_repo/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
