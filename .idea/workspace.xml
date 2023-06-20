@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="s3 bucket create and upload file">
-      <change afterPath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/connection_module.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/config.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/connection_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/connection_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_GIT_repo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_GIT_repo/S3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +58,27 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Python.connection_module">
+    <configuration name="S3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AWS_GIT_repo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AWS_GIT_repo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\git\AWS_GIT_repo\S3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="c" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,28 +142,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create_text_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_-codes_-and_projects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\git\python_-codes_-and_projects\test\create_text_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AWS_GIT_repo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -149,11 +150,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AWS_GIT_repo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AWS_GIT_repo/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,19 +164,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.create_text_file" />
       <item itemvalue="Python.create_text_file (1)" />
       <item itemvalue="Python.c" />
-      <item itemvalue="Python.main" />
       <item itemvalue="Python.connection_module" />
+      <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.S3" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.connection_module" />
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.S3" />
         <item itemvalue="Python.create_text_file (1)" />
         <item itemvalue="Python.c" />
-        <item itemvalue="Python.create_text_file" />
       </list>
     </recent_temporary>
   </component>
