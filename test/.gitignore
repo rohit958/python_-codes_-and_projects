@@ -201,7 +201,7 @@ PublishScripts/
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
-#!**/[Pp]ackages/repositories.config.txt
+#!**/[Pp]ackages/repositories.config.JSON
 # NuGet v3's project.json files produces more ignorable files
 *.nuget.props
 *.nuget.targets
@@ -318,7 +318,7 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/**
-# !tools/packages.config.txt
+# !tools/packages.config.JSON
 
 # Tabs Studio
 *.tss
