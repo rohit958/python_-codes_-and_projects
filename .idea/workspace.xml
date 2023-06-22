@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="s3" />
+    <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="s3">
+      <change beforePath="$PROJECT_DIR$/../AWS_GIT_repo/S3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_GIT_repo/S3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687328425495</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="s3">
+      <created>1687330439277</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687330439277</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,6 +337,11 @@
           <url>file://$PROJECT_DIR$/test/create_text_file.py</url>
           <line>12</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../AWS_GIT_repo/S3.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
