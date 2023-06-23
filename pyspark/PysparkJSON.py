@@ -23,7 +23,7 @@ df1.show(n=5)
 # nested JSOn file parsing and wrting to table in MYSQL
 
 print("after exploding")
-df2 = df1.withColumn('fields', array(col("fields")))
+df2 = df1.withColumn('fields', explode(col("fields")))
 df3 = df2.withColumn('data', explode(col("data")))
 df3.printSchema()
-df3.select("*", "fields.")
+df3.select("*", "fields.label").show()
