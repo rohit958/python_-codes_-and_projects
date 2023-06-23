@@ -12,16 +12,18 @@ findspark.init()
 
 # import json
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import explode
+from pyspark.sql.functions import *
 
 spark = SparkSession.builder.getOrCreate()
 
-df = spark.read.option("multiline", "true").json(r"D:\git\python_-codes_-and_projects\sample_JSON\sample2.json")
-df.printSchema()
-df.show()
-df.select('age').show()
+df = spark.read.option("multiline", "true").json(
+    r"D:\git\python_-codes_-and_projects\sample_JSON\Govement_data\City_bus.JSON")
+df1 = df.select(["fields", "data"])
+df1.show(n=5)
+# nested JSOn file parsing and wrting to table in MYSQL
 
 print("after exploding")
-df2 = df.select(explode(df.address))
-df2.printSchema()
-df2.show()
+df2 = df1.withColumn('fields', array(col("fields")))
+df3 = df2.withColumn('data', explode(col("data")))
+df3.printSchema()
+df3.select("*", "fields.")
