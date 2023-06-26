@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="connection modules">
+      <change afterPath="$PROJECT_DIR$/Jupyter_notebooks/json.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_CSV/Government_data/NDSAP_prgrs_report_ATM_instl_March-16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_JSON/Govement_data/Monthly_petroleum_consumption.JSON" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_XML_files/datafile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample_orc_files/datafile.ods" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyspark/PysparkJSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyspark/PysparkJSON.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_JSON/logfile.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/c.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/c.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
