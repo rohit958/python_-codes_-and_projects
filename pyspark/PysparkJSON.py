@@ -5,7 +5,7 @@ Steps-
 3.call sql module
 4. read JSON file
 '''
-
+import pandas
 import findspark
 
 findspark.init()
@@ -34,6 +34,8 @@ df4 = df3.select(df3.data[0].alias("ID"), df3.data[1].alias("Label"), df3.data[2
 df5 = df4.withColumn("ID", df4["ID"].cast('integer'))
 
 # removing duplicate values
-df6 = df5.distinct().orderBy("ID").show()
+df6 = df5.distinct().orderBy("ID")
 
 # writing data to
+PD_DF = df6.toPandas()
+PD_DF
