@@ -26,7 +26,14 @@ print("after exploding")
 df2 = df1.withColumn('fields', explode(col("fields")))
 df3 = df2.withColumn('data', explode(col("data")))
 df3.printSchema()
+
 # separating columns from data column
 df4 = df3.select(df3.data[0].alias("ID"), df3.data[1].alias("Label"), df3.data[2].alias("Type"))
 
-df4.distinct().orderBy("ID").show()
+# converting ID to integer type
+df5 = df4.withColumn("ID", df4["ID"].cast('integer'))
+
+# removing duplicate values
+df6 = df5.distinct().orderBy("ID").show()
+
+# writing data to

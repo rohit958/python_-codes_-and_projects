@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="connection modules">
-      <change afterPath="$PROJECT_DIR$/Jupyter_notebooks/json.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample_CSV/Government_data/NDSAP_prgrs_report_ATM_instl_March-16.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample_JSON/Govement_data/Monthly_petroleum_consumption.JSON" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample_XML_files/datafile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample_orc_files/datafile.ods" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="JSON parsing">
       <change beforePath="$PROJECT_DIR$/pyspark/PysparkJSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyspark/PysparkJSON.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample_JSON/logfile.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/c.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/c.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687418146084</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="JSON parsing">
+      <created>1687762103594</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687762103594</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,7 +310,8 @@
     <MESSAGE value="s3 bucket create and upload file" />
     <MESSAGE value="s3" />
     <MESSAGE value="connection modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="connection modules" />
+    <MESSAGE value="JSON parsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="JSON parsing" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
