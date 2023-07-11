@@ -2,10 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84368219-4dde-4fe2-9d8a-a1001ed0bd29" name="Changes" comment="JSON parsing">
-      <change beforePath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/connection_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/connection_module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/config.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyspark/PysparkJSON.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyspark/PysparkJSON.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyspark/Pysparn_JSON.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyspark/testpyspark.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyspark/testpyspark.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/Government_data/NDSAP_prgrs_report_ATM_instl_March-16.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/access-code-password-recovery-code.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/access_code.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/addresses.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/cities.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/cities1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/covid.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/email.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/employee.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/employee.txt.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/oscar_age_male.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/output.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/sample database/New Text Document.txt.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/sample database/bonus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/sample database/bonus.txt.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/sample database/title.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/sample database/title.txt.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/sample database/worker.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_CSV/sample database/worker.txt.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_JSON/Govement_data/City_bus.JSON" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_JSON/Govement_data/Monthly_petroleum_consumption.JSON" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_JSON/Large_JSON.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_JSON/new 1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_JSON/sample2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_JSON/sample2.json.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_XML_files/datafile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_avro_file/avro_spark.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_avro_file/spark-avro_2.12-3.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_avro_file/train.avro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_avro_file/twitter.avro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_avro_file/twitter.snappy.avro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_excel_Files/file_example_XLS.xls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_orc_files/datafile.ods" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_parquet_file/userdata1.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_parquet_file/userdata2.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_parquet_file/userdata3.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_parquet_file/yellow_tripdata_2022-01.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_text_files/File1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_zip_file/sample_text_files/sample_text_files.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample_zip_file/sample_zip_file.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +98,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AWS_GIT_repo" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.connection_module">
+  <component name="RunManager" selected="Python.testpyspark">
+    <configuration name="ParseJSON" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AWS_GIT_repo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../AWS_GIT_repo/data_base_ETL/ParseJSON.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="PysparkJSON" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,27 +133,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyspark/PysparkJSON.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="c" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_-codes_-and_projects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/c.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -141,7 +183,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="new 1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="testpyspark" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_-codes_-and_projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -149,11 +191,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/notes" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pyspark" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/notes/new 1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pyspark/testpyspark.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,18 +206,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.main (1)" />
-      <item itemvalue="Python.new 1" />
-      <item itemvalue="Python.c" />
       <item itemvalue="Python.PysparkJSON" />
       <item itemvalue="Python.connection_module" />
+      <item itemvalue="Python.ParseJSON" />
+      <item itemvalue="Python.testpyspark" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.testpyspark" />
+        <item itemvalue="Python.PysparkJSON" />
         <item itemvalue="Python.connection_module" />
         <item itemvalue="Python.main (1)" />
-        <item itemvalue="Python.PysparkJSON" />
-        <item itemvalue="Python.c" />
-        <item itemvalue="Python.new 1" />
+        <item itemvalue="Python.ParseJSON" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687762103594</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="JSON parsing">
+      <created>1687798101079</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1687798101079</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

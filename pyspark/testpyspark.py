@@ -1,8 +1,4 @@
-import findspark
+import pandas as pd
 
-findspark.init()
-from pyspark.sql import SparkSession
-
-spark = SparkSession.builder.getOrCreate()
-df = spark.sql('''select 'spark' as hello''')
-df.show()
+df = pd.read_xml("D:\Souce_files\sample_XML_files\datafile.xml")
+print("sample: ", df.head(5))
