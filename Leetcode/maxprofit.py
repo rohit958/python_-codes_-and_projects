@@ -10,15 +10,14 @@ Output: 5
 Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
 Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
 '''
-
-
-
-
 def maxProfit(prices) :
-	prices.sort(reverse=True)
-	for x in range(len(prices)):
-		for y in range(len(prices)):
+	buyPrice = prices[0]
+	maxProfit = 0
+	for price in prices[1:]:
+		if price > buyPrice:
+			maxProfit = max(maxProfit, price - buyPrice)
+		else:
+			buyPrice = price
+	return maxProfit
 
-			
-
-print(maxProfit([2,7,11,15]))
+print(maxProfit( [7,1,5,3,6,4]))
