@@ -15,15 +15,12 @@ for b in x:
     print(f"{a},{b} XOR:",(a^b))
     print("next number_____","\n")
 
-def getSum(a, b):
-    mask = 0xffffffff
-    while (b):
-        sum = (a ^ b) & mask
-        carry = ((a & b) << 1) & mask
-    a = sum
-    b = carry
 
-    if (a >> 31) & 1:
-        return ~(a ^ mask)
+def getSum( a, b) :
+    while (b != 0):
+        carry = (a & b)
+        a = a ^ b
+        b = carry << 1
     return a
+
 print(getSum(5,6))
