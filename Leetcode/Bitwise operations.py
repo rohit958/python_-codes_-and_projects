@@ -26,5 +26,4 @@ def getSum(a, b):
     if (a >> 31) & 1:
         return ~(a ^ mask)
     return a
-
 print(getSum(5,6))
