@@ -6,7 +6,7 @@ works best with sorted array
 '''
 
 import array as arr
-numbers=arr.array('i',[1,2,3,4,5,6,7,45,66,77])#already sorted array
+numbers=[-1,0,3,5,9,12]#already sorted array
 
 def binary_search(element):
     low=0
