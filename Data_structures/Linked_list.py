@@ -6,7 +6,6 @@ linked list  operations
 4-search
 '''
 
-
 # implementing linked list using class
 
 class Node:
