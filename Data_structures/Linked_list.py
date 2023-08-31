@@ -1,106 +1,89 @@
-'''
-linked list  operations
-1-Transversal
-2-insertion at head, end and at position
-3-deletion  at head, end and at position
-4-search
-'''
-
-# implementing linked list using class
+# linked list
 
 class Node:
-    def __init__(self, data=None, next=None):
-        self.data = data
-        self.next = next
+    def __init__(self,value):
+        self.value=value
+        self.next=None
+
+class Linked_list:
+    length=0
+    def __init__(self,value):
+        New_node=Node(value)
+        self.head=New_node
+        self.tail=New_node
+        self.length=1
+
+    def print_list(self):
+        if self.length ==0:
+            print("linked list is empty")
+        else:
+            temp = self.head
+            while temp is not None:
+                print(temp.value)
+                temp = temp.next
 
 
-class LinkedList:
-    def __init__(self):
-        self.head = None
+    def append(self,value):
+        # adding value at last
+        New_node = Node(value)
+        if self.length==0:
+            self.head=New_node
+            self.tail=New_node
+        else:
+            self.tail.next=New_node
+            self.tail=New_node
+        self.length+=1
 
-    def insertAtBeginning(self, data):
-        node = Node(data, self.head)
-        self.head = node
+    def pop(self):
+        # removes last element
+        if self.length==0:
+            return None
+        else:
+            temp=self.head
+            pre=self.head
+            while (temp.next):
+                pre=temp
+                temp=temp.next
+            self.tail=pre
+            self.tail.next=None
+            self.length-=1
+            if self.length==0:
+                self.head=None
+                self.tail=None
+            return temp
+    def prepend(self):
+        # add elemnt at beginning
+        temp=self.head.next
+        self.head=temp
 
-    def print(self):
-        if self.head is None:
-            print("Linked List list is empty")
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        else:
+            temp= self.head
+            self.head =self.head.next
+            temp.next=None
+            self.length -= 1
 
-        itr = self.head
-        llstr = ''
-        while itr:
-            llstr += str(itr.data) + '-->'
-            itr = itr.next
-        print(llstr)
+        if self.length == 0:
+            self.tail = None
+        return temp
 
-    def insertAtEnd(self, data):
-        if self.head is None:
-            self.head = Node(data, None)
-            return
+    def prepend(self, value):
+        new_node = Node(value)
+        if self.length == 0:
+            self.head=new_node
+            self.tail=new_node
+        else:
+            new_node.next=self.head
+            self.head=new_node
+        self.length+=1
+        return True
 
-        itr = self.head
-
-        while itr.next:
-            itr = itr.next
-        itr.next = Node(data, None)
-
-    def insertValues(self, dataList):
-        self.head = None
-        for data in dataList:
-            self.insertAtEnd(data)
-
-    def getLength(self):
-        count = 0
-        itr = self.head
-        while itr:
-            count += 1
-            itr = itr.next
-
-        return count
-
-    def insert_at(self, index, data):
-        if index < 0 or index > self.getLength():
-            raise Exception("Invalid Index")
-
-        if index == 0:
-            self.insert_at_begining(data)
-            return
-
-        count = 0
-        itr = self.head
-        while itr:
-            if count == index - 1:
-                node = Node(data, itr.next)
-                itr.next = node
-                break
-
-            itr = itr.next
-            count += 1
-
-    def remove_at(self, index):
-        if index < 0 or index >= self.getLength():
-            raise Exception("Invalid Index")
-
-        if index == 0:
-            self.head = self.head.next
-            return
-
-        count = 0
-        itr = self.head
-        while itr:
-            if count == index - 1:
-                itr.next = itr.next.next
-                break
-
-            itr = itr.next
-            count += 1
-
-
-if __name__ == '__main__':
-    ll = LinkedList()
-    ll.insertValues(["mango", 6, "banana", "pizza", "beer"])
-    p = ll.getLength()
-    print("lenght:",p)
-    ll.insert_at(3,"bacardy")
-
-    ll.print()
+    def get(self, index):
+        if index < 0 or index > self.length:
+            return None
+        temp = self.head
+        for i in range(index):
+            temp = temp.next
+        return temp

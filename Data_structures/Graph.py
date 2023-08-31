@@ -1,7 +1,7 @@
 #Graph - non linear, multidirectional , non hierarchical
 # Graph tranversal- 1.BFS- queue implementation
 #                   2.DFS- stack implelementation
-# to find shortest path-
+# to find shortest path- DJki
 
 
 class Graph:
