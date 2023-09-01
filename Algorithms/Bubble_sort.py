@@ -1,9 +1,7 @@
-'''
-Bubble sort 
+ """Bubble sort 
 con- slow in large dataset
 time complexity-O(log(n^2))
-space complexity-O(1)
-'''
+space complexity-O(1)"""
 
 #import numpy as np
 
