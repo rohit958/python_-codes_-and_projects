@@ -127,6 +127,14 @@ class LinkedList:
         self.length -= 1
         return temp
 
+    def MiddleList(self):
+        fast_ptr=self.head
+        slow_ptr=self.head
+
+        while (fast_ptr.next and fast_ptr.next.next):
+            slow_ptr=slow_ptr.next
+            fast_ptr=fast_ptr.next.next
+        return slow_ptr.value
     def reverse(self):
         temp = self.head
         self.head = self.tail
@@ -144,11 +152,12 @@ my_linked_list = LinkedList(1)
 my_linked_list.append(2)
 my_linked_list.append(3)
 my_linked_list.append(4)
-
+my_linked_list.append(7)
+my_linked_list.reverse()
 print('LL before reverse():')
 my_linked_list.print_list()
 
-my_linked_list.reverse()
+print('middle:',my_linked_list.MiddleList())
 
 print('\nLL after reverse():')
 my_linked_list.print_list()
