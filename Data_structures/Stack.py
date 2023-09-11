@@ -1,12 +1,13 @@
 '''
 Stack  operations
-1-Push
-2-POP
+1-Push-insert
+2-POP-remove
 3-isEmpty
 4-isFull
 '''
-# implement using list
-# other ways to implement-using collections and using queue.queueLIFO libraries
+# 1. implement using list
+# 2. implement-using collections and using queue.queueLIFO libraries
+# 3. implement using Linked list:benefit(now need of continous allocation of memory)
 '''
 from logging import exception
 stack = []
@@ -31,7 +32,7 @@ if __name__ == '__main__':
 
     isEmpty(stack)
 '''
-
+'''
 # using collections
 from collections import deque
 
@@ -47,3 +48,8 @@ print('Popping:',st.pop())
 print('Popping:',st.pop())
 print('Popping:',st.pop())
 print('Popping:',st.pop())
+
+'''
+
+# using linked list
+

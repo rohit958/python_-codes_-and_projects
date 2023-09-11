@@ -1,9 +1,6 @@
 def divisorSubstrings(num, k):
     nums = str(num)
-    if len(nums) == 1:
-        return num
     result=0
-
     for i in range(len(nums)-k+1):
         temp = (nums[i:i+k])
         window= int(temp)
