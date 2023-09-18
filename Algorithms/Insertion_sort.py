@@ -14,14 +14,10 @@ def PrintArray(text , arrray):
 
 
 def InsertionSort( ar):
-    end = len(ar)
-    for i in range(1, end):
-        anchor = ar[i]
-        j = i-1
-        while j >=0 and anchor < ar[j]:
-            ar[j+1] = ar[j]
-            j -= 1
-        ar[j+1] = anchor
+    for i in range(len(ar)-1):
+        min_inx = i
+        for j in range(i+1,len(ar)-1):
+
 
 
 if __name__ == '__main__':

@@ -25,7 +25,7 @@ print(Q.pop(), '. After Dequeue:', Q)
 print(Q.pop(), '. After Dequeue:', Q)
 '''
 # implementing using collections library
-
+'''
 from collections import deque
 
 qe = deque()
@@ -38,4 +38,4 @@ qe.appendleft( 'Popat lal')
 print(qe)
 print(qe.pop())
 print(qe.pop())
-print(qe.pop())
+'''
