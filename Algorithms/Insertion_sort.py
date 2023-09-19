@@ -16,12 +16,12 @@ def PrintArray(text , arrray):
 
 def InsertionSort( ar):
     for i in range(len(ar)-1):
-        min_indx = i
-        for j in range(i+1,len(ar)):
+        min_indx = i # selection
+        for j in range(i+1,len(ar)):  #comparision to find smaller element than selected
             if ar[j]<ar[min_indx]:
                 min_indx=j
         if min_indx!=i:
-            temp=ar[i]
+            temp=ar[i]  #swapping
             ar[i]=ar[min_indx]
             ar[min_indx]=temp
     return ar
