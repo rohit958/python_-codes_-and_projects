@@ -13,15 +13,17 @@ def PrintArray(text, arrray):
     print(text, arrray)
 
 
-def selsort(num):
-    for x in range(len(num)-1):
-        min_index = x
-        for j in range(min_index + 1, len(num)):
-            if num[j] < num[min_index]:
-                min_index = j
-        num[x], num[min_index] = num[min_index], num[x]  # 1 line swapping
-
-
+def selsort(ar):
+    for i in range(len(ar)-1):
+        min_indx = i # selection
+        for j in range(i+1,len(ar)):  #comparision to find smaller element than selected
+            if ar[j]<ar[min_indx]:
+                min_indx=j
+        if min_indx!=i:
+            temp=ar[i]  #swapping
+            ar[i]=ar[min_indx]
+            ar[min_indx]=temp
+    return ar
 if __name__ == '__main__':
     PrintArray('before sorting: ', num)
     selsort(num)

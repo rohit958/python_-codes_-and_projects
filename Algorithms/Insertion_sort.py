@@ -14,20 +14,25 @@ def PrintArray(text , arrray):
     print(text, arrray)
 
 
-def InsertionSort( ar):
-    for i in range(len(ar)-1):
-        min_indx = i # selection
-        for j in range(i+1,len(ar)):  #comparision to find smaller element than selected
-            if ar[j]<ar[min_indx]:
-                min_indx=j
-        if min_indx!=i:
-            temp=ar[i]  #swapping
-            ar[i]=ar[min_indx]
-            ar[min_indx]=temp
-    return ar
+def insertion_sort(ar):
+    if len(ar) == 0 or len(ar) == 1:
+        return ar
+    else:
+        for i in range(0, len(ar) - 1): #starts from 2nd position and compares element in reverse direction till the correct order found
+            for j in range(i + 1, 0, -1):
+                if ar[j] < ar[j - 1]:
+                    temp = ar[j]
+                    ar[j] = ar[j - 1]
+                    ar[j - 1] = temp
+        return ar
 
 
-if __name__ == '__main__':
-    PrintArray('before sorting: ', ar)
-    InsertionSort(ar)
-    PrintArray("after sorting: ", ar)
+print(insertion_sort([1,2,3,5,4]))
+
+"""
+    EXPECTED OUTPUT:
+    ----------------
+    [1, 2, 3, 4, 5, 6]
+
+ """
+
