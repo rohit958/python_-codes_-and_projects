@@ -15,11 +15,12 @@ class Tree:
         NewNode = Node(value)
         if self.root is None:
             self.root=NewNode
+            return True
         else:
             temp=self.root
 
             while (True):
-                if NewNode == temp:
+                if NewNode.value == temp.value:
                     return False
                 if NewNode.value < temp.value:
                     #left insertion
