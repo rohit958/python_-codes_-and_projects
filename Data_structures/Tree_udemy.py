@@ -1,5 +1,8 @@
 #BST
 # smaller value goes to left and grater goes to right
+    # tree transversal:
+    #                   1.BFS- queue implementation
+    #                   2.DFS- stack implelementation
 
 class Node:
     def __init__(self,value):

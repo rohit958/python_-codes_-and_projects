@@ -1,13 +1,12 @@
 #Graph - non linear, multidirectional , non hierarchical
-# Graph tranversal- 1.BFS- queue implementation
-#                   2.DFS- stack implelementation
+# Graph tranversal-
 # to find shortest path- DJki
 
 
 class Graph:
     def __init__(self, edges):
         self.edges = edges
-        self.graph_dict = {}
+        self.graph_dict = {} #adjacent list
         for start, end in edges:
             if start in self.graph_dict:
                 self.graph_dict[start].append(end)
