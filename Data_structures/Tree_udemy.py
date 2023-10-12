@@ -50,8 +50,66 @@ class Tree:
             else:
                 return True
         return False
+    def BFS(self):
+        curr=self.root
+        res=[]
+        q=[]
+        q.append(curr)
 
+        while(len(q)>0):
+            curr=q.pop(0)
+            res.append(curr.value)
+            if curr.Left is not None:
+                q.append(curr.Left)
+            if curr.Right is not None:
+                q.append(curr.Right)
+        return res
+    def print_Tree(self):
+        if self.Left is not None:
+            self.print_Tree()
+        print(self.root),
+        if self.Right is not None:
+            self.print_Tree()
+    def DFS_preorder(self):
+        #preorder- first parent then left then right
+        res=[]
+        def tranverse(Node):
+            res.append(Node.value)
+            if Node.Left is not None:
+                tranverse(Node.Left)
+            if Node.Right is not None:
+                tranverse(Node.Right)
+        tranverse(self.root)
+        return res
 
+    def DFS_postorder(self):
+        # postorder- first left then right then parent
+        res = []
+
+        def tranverse(Node):
+
+            if Node.Left is not None:
+                tranverse(Node.Left)
+            if Node.Right is not None:
+                tranverse(Node.Right)
+            res.append(Node.value)
+        tranverse(self.root)
+        return res
+
+    def DFS_inorder(self):
+        # postorder- first left then parent then right- can be used for sorting
+        res = []
+
+        def tranverse(Node):
+
+            if Node.Left is not None:
+                tranverse(Node.Left)
+            res.append(Node.value)
+            if Node.Right is not None:
+                tranverse(Node.Right)
+
+        tranverse(self.root)
+        return res
 MyTree=Tree()
 
 MyTree.insert(4)
@@ -60,7 +118,14 @@ MyTree.insert(9)
 MyTree.insert(1)
 MyTree.insert(8)
 MyTree.insert(5)
+
 MyTree.insert(6)
 MyTree.insert(2)
 
-print(MyTree.contains(10))
+print("Breadth First Search:",MyTree.BFS())
+
+print("Depth First Search-pre_order:",MyTree.DFS_preorder())
+
+print("Depth First Search-post_order:",MyTree.DFS_postorder())
+
+print("Depth First Search-in_order:",MyTree.DFS_inorder())
