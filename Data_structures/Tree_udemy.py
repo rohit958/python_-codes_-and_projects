@@ -1,8 +1,11 @@
 #BST
-# smaller value goes to left and grater goes to right
+# smaller value goes to left and greater goes to right
     # tree transversal:
-    #                   1.BFS- queue implementation
-    #                   2.DFS- stack implelementation
+    #    1.BFS- queue implementation top to bottom
+    #    2.DFS- stack implelementation bottom to top
+            # 2.1 preoder- parent-left right
+            # 2.2 postorder- left-right-parent
+            # 2.3 inoder- left-parent-right
 
 class Node:
     def __init__(self,value):
@@ -101,7 +104,6 @@ class Tree:
         res = []
 
         def tranverse(Node):
-
             if Node.Left is not None:
                 tranverse(Node.Left)
             res.append(Node.value)
