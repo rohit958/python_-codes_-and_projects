@@ -88,7 +88,6 @@ class Tree:
     def DFS_postorder(self):
         # postorder- first left then right then parent
         res = []
-
         def tranverse(Node):
 
             if Node.Left is not None:

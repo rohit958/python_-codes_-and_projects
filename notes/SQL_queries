@@ -121,3 +121,52 @@ Datatypes of corresponding columns selected from each table can be different.			
 It may not return distinct columns.														It returns distinct rows.
 */
 --------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SQL query optimization is crucial for improving the performance of database queries. Here are some common techniques to optimize SQL queries:
+
+1. **Use Indexes:**
+   - Indexes can significantly speed up query performance by providing quick access to specific rows. Ensure that tables are properly indexed based on the columns used in the WHERE, JOIN, and ORDER BY clauses.
+
+2. **Update Statistics:**
+   - Regularly update the statistics of database tables and indexes. Accurate statistics help the query optimizer make better decisions about the most efficient way to execute a query.
+
+3. **Optimize JOIN Operations:**
+   - Minimize the use of unnecessary JOIN operations. Choose the most appropriate type of JOIN (INNER, LEFT, RIGHT, etc.) based on the specific requirements of the query.
+
+4. **Limit the Number of Columns in SELECT Statements:**
+   - Only select the columns that are needed for the query. Avoid using `SELECT *` when unnecessary, as it can lead to fetching more data than required.
+
+5. **Use WHERE Clause Effectively:**
+   - Place conditions in the WHERE clause to filter rows as early as possible in the query execution process. This reduces the amount of data that needs to be processed.
+
+6. **Avoid SELECT DISTINCT Unless Necessary:**
+   - Using SELECT DISTINCT can be resource-intensive. Only use it when necessary, and consider alternative approaches like GROUP BY if appropriate.
+
+7. **Use EXISTS and IN Instead of DISTINCT:**
+   - Use EXISTS and IN clauses when checking for the existence of records rather than using DISTINCT. These clauses are often more efficient.
+
+8. **Avoid Using Functions in WHERE Clause:**
+   - Using functions in the WHERE clause can prevent the query optimizer from utilizing indexes. Try to avoid using functions on columns in the WHERE clause, if possible.
+
+9. **Optimize Subqueries:**
+   - Evaluate and optimize subqueries. Consider using JOINs or EXISTS clauses instead of subqueries when appropriate.
+
+10. **Partitioning and Sharding:**
+    - For large tables, consider partitioning or sharding the data. This distributes the data across multiple physical or logical partitions, improving query performance.
+
+11. **Use Query Hints:**
+    - Some database systems allow the use of query hints to influence the query optimizer's decisions. However, use these judiciously, as they may affect the portability of your SQL code across different database systems.
+
+12. **Avoid SELECT * in Subqueries:**
+    - If using a subquery, avoid using `SELECT *`. Instead, explicitly list the columns needed. This helps in reducing unnecessary data retrieval.
+
+13. **Cache Query Results:**
+    - If applicable, consider caching the results of frequently executed queries. This can be especially beneficial for read-heavy workloads.
+
+14. **Review and Optimize Joins and Subqueries:**
+    - Carefully review the execution plan of your queries. Identify performance bottlenecks in terms of joins and subqueries, and optimize them accordingly.
+
+15. **Consider Materialized Views:**
+    - Materialized views store precomputed results of queries, which can be especially useful for complex and frequently used queries. Keep them up to date for accurate results.
+
+Always remember that the effectiveness of these techniques can vary based on the specific database system being used, the schema design, and the characteristics of the data. Regularly monitoring and fine-tuning queries is essential for maintaining optimal performance over time.

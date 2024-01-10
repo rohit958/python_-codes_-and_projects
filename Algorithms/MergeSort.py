@@ -1,6 +1,6 @@
 """
 Merge Sort Algorithm
-
+divide and conquer
 Space Complexity-
 Time Complexity-O(NLog(n))
 Worst TimeComplexity= O(log(n^2))
@@ -13,42 +13,40 @@ def printArray(text, arrray):
     print(text, arrray)
 
 
-def mergeSort(ar):
-    if len(ar) <= 1:
-        return ar
-    mid = int(len(ar) / 2)
-    left = ar[:mid]
-    right = ar[mid:]
-    mergeSort(left)
-    mergeSort(right)
-    mergeSortedArrays(left, right, ar)
+def merge(list1, list2):
+    combined = []
+    i = 0
+    j = 0
 
-
-def mergeSortedArrays(a, b, arr):
-    len_a = len(a)
-    len_b = len(b)
-    i = j = k = 0
-    while i < len_a and j < len_b:
-        if a[i] < + b[j]:
-            arr[k] = a[i]
+    while i < len(list1) and j < len(list2):
+        if list1[i] < list2[j]:
+            combined.append(list1[i])
             i += 1
-
         else:
-            arr[k] = b[j]
+            combined.append(list2[j])
             j += 1
-        k += 1
-    while i < len_a:
-        arr[k] = a[i]
+
+    while i < len(list1):
+        combined.append(list1[i])
         i += 1
-        k += 1
 
-    while j < len_b:
-        arr[k] = b[j]
+    while j < len(list2):
+        combined.append(list2[j])
         j += 1
-        k += 1
+    return combined
 
+
+def mergeSort(array):
+    if len(array)==1:
+        return array
+    mid=int(len(array)/2)
+
+    fisthalf=mergeSort(array[:mid])
+    secondhalf=mergeSort(array[mid:])
+    return merge(fisthalf,secondhalf)
 
 if __name__ == '__main__':
     printArray('before sorting: ', numbers)
-    mergeSort(numbers)
-    printArray("after Merge sorting: ", numbers)
+    #mergeSort(numbers)
+    print("sorted array",mergeSort(numbers))
+
