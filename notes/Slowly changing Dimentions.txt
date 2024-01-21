@@ -15,7 +15,8 @@
  For this type of slowly changing dimension, add a new record encompassing the change and mark the old record as inactive. 
  This allows the fact table to continue to use the old version of the data for historical reporting purposes leaving the changed data in the new record to only impact the fact data from that point forward. 
  
- "Using of Active and Inactive column."
+ 1."Using of Active and Inactive column."
+ 2."or start and end date"
  
  
 
@@ -27,7 +28,7 @@
  When the data is updated the existing value is “moved” to the column defined to store the previous past value and the new value is placed into the reportable column. 
  This allows you the ability to look back at what the value of the data was previously. 
  
- "Using of of previous data column."
+ "Using of previous data column."
 
 
 

@@ -1,3 +1,6 @@
+# need to find sums pair with target
+# we count using two pointers- first_ptr and last Ptr
+
 def countPairs( nums, target) :
     pair_cnt = 0
     first_ptr = 0

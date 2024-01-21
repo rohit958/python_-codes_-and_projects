@@ -1,0 +1,6 @@
+"""
+Greegy Algorithm:-
+
+
+
+"""
