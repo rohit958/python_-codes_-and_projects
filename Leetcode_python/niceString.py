@@ -22,5 +22,5 @@ def longestNiceSubstring(s: str):
        x+=1
    return res
 
-s = "Bb"
+s = "Bxyzbb"
 print(longestNiceSubstring(s))
