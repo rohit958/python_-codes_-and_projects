@@ -6,7 +6,6 @@ class node:
 class Trie:
     def __init__(self):
         self.root= node()
-        print(node)
 
     def insert(self,s):
         node=self.root
@@ -30,7 +29,6 @@ class Trie:
             if char not in node.children:
                 return False
             node=node.children[char]
-
             return True
 
 
