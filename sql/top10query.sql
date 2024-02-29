@@ -95,3 +95,25 @@ on emp.empid=d.empid
 group by d.project
 order by maxsal desc
 
+--query to find total count employees joined in a year
+select count(*),extract(year from doj) as yearofjoinng from employeedetail
+group by yearofjoinng
+
+--salary group
+
+select empid,empname,salary,
+case when salary <100000 then 'low'
+	when salary between 100000 and 200000 then 'medium'
+	when salary > 200000 then 'high'
+	end as salary_band
+from employee 
+
+--pivoting
+SELECT
+EmpID,
+EmpName,
+SUM(CASE WHEN City = 'Mathura' THEN Salary END) AS "Mathura",
+SUM(CASE WHEN City = 'Pune' THEN Salary END) AS "Pune",
+SUM(CASE WHEN City = 'Delhi' THEN Salary END) AS "Delhi"
+FROM Employee
+GROUP BY EmpID, EmpName;
