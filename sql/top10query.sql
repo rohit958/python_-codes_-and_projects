@@ -48,5 +48,50 @@ where 2=
 select count(distinct e2.salary) from employee e2
 where e2.salary>=e1.salary)
 
+--query to find duplicate
 
+select count(*),empid from employee
+group by empid
+having count(*)>1;
+
+--query to delete duplicate records
+delete from employee where empid in
+(select empid from employee
+ group by empid 
+ having count(*)>1)
+
+
+
+
+-- query to find people working in same project
+with CTE as(
+select emp.empname,emp.empid,emp.city, d.project,d.empposition
+from employee emp 
+join employeedetail d
+on emp.empid=d.empid)
+
+select a.empname,a.empid,a.city, a.project
+from CTE a, CTE b
+where a.project=b.project and a.empid<>b.empid
+
+
+--people with highest salary in each project
+with CTE as(
+select emp.empname,emp.empid,emp.salary, d.project, row_number() over(partition by d.project order by emp.salary desc)
+from employee emp 
+join employeedetail d
+on emp.empid=d.empid
+)
+
+select empname,empid,salary as max_salary, project from CTE
+where row_number =1
+
+
+--simple join but with limited data to get max_salary in each project
+select d.project,max(emp.salary)as maxsal
+from employee emp 
+join employeedetail d
+on emp.empid=d.empid
+group by d.project
+order by maxsal desc
 
