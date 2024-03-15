@@ -11,5 +11,5 @@ def firstUniqChar( s: str) -> int:
         if res[s[x]]==1:
             return x
 
-s = "aadadaad"
+s = "aadadaadq"
 print(firstUniqChar(s))
