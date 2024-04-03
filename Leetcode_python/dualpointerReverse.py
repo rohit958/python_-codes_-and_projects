@@ -11,5 +11,6 @@ def reverseStringself( s) :
     print(s)
 
 s= ["h","e","l","l","o"]
-reverseStringself(s)
+reverseStringself(str(s))
+
 
