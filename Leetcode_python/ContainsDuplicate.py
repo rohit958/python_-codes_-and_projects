@@ -1,4 +1,4 @@
-def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+def containsNearbyDuplicate( nums, k):
     anchor = 0
     mid = len(nums) // 2
     Flag = False
