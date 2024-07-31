@@ -14,4 +14,4 @@ def containsNearbyDuplicate( nums, k):
     return Flag
 
 
-print(containsNearbyDuplicate(nums=[1,2,3,1]))
+print(containsNearbyDuplicate(nums=[1,2,3,1],k=2))
