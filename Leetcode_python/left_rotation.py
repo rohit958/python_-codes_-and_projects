@@ -2,7 +2,7 @@
 
 list=[1,2,3,4,5]
 
-print(list)
+print("before rotation",list)
 
 # left rotation for n using list comprehension
 n=3
