@@ -46,10 +46,10 @@ HDFS supports hierarchical file organization.
 
 	They are:-
 
-	 1.Map Phase- This phase applies business logic to the data. 
+	 1.Map Phase-This phase applies business logic to the data.
 	 The input data gets converted into key-value pairs.
 
-	 2.Reduce Phase- The Reduce phase takes as input the output of Map Phase. 
+	 2.Reduce Phase-The Reduce phase takes as input the output of Map Phase.
 	 It applies aggregation based on the key of the key-value pairs.
 	
 	Map-Reduce works in the following way:

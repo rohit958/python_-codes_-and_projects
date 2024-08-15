@@ -10,22 +10,32 @@ FROM table_name
 group by column1, column2;
 
 or 
-select DISTINCT ID from table;
+(ii).select DISTINCT ID from table;
 
-select *, row_number() over(partition by id) as rn from employee
+(iii).select *, row_number() over(partition by id) as rn from employee
 where rn <1
 
 Pyspark:
 df.dropDuplicates()
 -----------------------------------------------------------------------------------------------------------------------------------
-2. handling missing values or replaceing null values with default value
+2. handling missing values or replacing null values with default value
 
-select * from employee where id is not null
+select count(*) from employee where id is not null -- getiing number of Null rows
 or
+--replace null value with default
 select coalesce("ID","default value") from emp;
 
 pyspark-
 df.na.drop('ID')
+
+# number of null rows in Pyspark
+df1= df.select([count(when(col(i).isNull(),i)).alias(i) for i in df.columns])
+df1.show()
+
+replace null values with default
+1.df1=df.fillna({"email": "unknown"})
+
+2.df_filled = df.withColumn("email", coalesce(col("email"),lit("unknown")))
 
 -----------------------------------------------------------------------------------------------------------------------------------
 3. date format issue
@@ -36,13 +46,36 @@ SQL= select cast('2024-08-01' as DATE) from employee
 update employee
 set datecol = cast (datecol as Date)
 -----------------------------------------------------------------------------------------------------------------------------------
-4. removing outliners
+4. Substring checks
+
+-- Using LIKE operator
+SELECT * FROM customers
+WHERE customer_name LIKE '%Smith%';
+
+-- Using CHARINDEX (SQL Server)
+SELECT * FROM customers
+WHERE CHARINDEX('Smith', customer_name) > 0;
+
+-- Using LOCATE (MySQL)
+SELECT * FROM customers
+WHERE LOCATE('Smith', customer_name) > 0;
+
+pyspark-
+df.filter(col("name").like("%John%")).show()
+
+df.filter(col("city").rlike("Los.*")).show()
 
 
 -----------------------------------------------------------------------------------------------------------------------------------
 5. standardising
---removing discrete values with average one or bring into 1-10 scale eg sal= sal/max(sal)
-select 
+--replacing null values with average one 
+
+
+select coalesce(salary,(select avg(salary) from employees)) from employees
+
+mean_age = df.select(F.mean(col("age"))).collect()[0][0]
+
+df_filled = df.withColumn("age", when(col("age").isNull(), mean_age).otherwise(col("age")))
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
