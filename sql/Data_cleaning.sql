@@ -13,7 +13,7 @@ or
 (ii).select DISTINCT ID from table;
 
 (iii).select *, row_number() over(partition by id) as rn from employee
-where rn <1
+where rn =1
 
 Pyspark:
 df.dropDuplicates()
