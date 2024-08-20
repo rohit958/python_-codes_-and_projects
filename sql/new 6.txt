@@ -1,0 +1,81 @@
+Write a sql query to get the top 5 users who did max number of transactions in last 1 month
+-------------
+Sample data:
+-------------
+patient_id , transaction_id , transaction_date , med_id
+101				trx_11			20-04-2023		 md_187
+101				trx_12			20-04-2023		md_182
+101				trx_13			20-04-2023		md_181
+101				trx_14			20-04-2023		md_121
+202				trx_15			20-04-2023		md_111
+202				trx_16			20-04-2023		md_131
+202				trx_17			20-04-2023		md_867
+202				trx_18			20-04-2023		md_121
+202				trx_19			20-04-2023		md_122
+303				trx_20			20-04-2023		md_113
+303 			trx_21			20-04-2023		md_109
+
+
+with temp as(
+select patient_id, transaction_id, extract(month from transaction_date) as month, med_id,
+from patients_table
+)
+
+select patient_id,count(transaction_id) over(partition by month) as cnt
+from temp
+order by cnt desc
+
+
+
+
+
+
+Given a CSV file named sales_data.csv 
+containing sales data with columns date, product_id, quantity_sold, and revenue,
+ write a PySpark script to read this file, calculate the total revenue generated for each product, and display the top 5 products based on total revenue.
+ 
+df=spark.read("CSV_file name")
+df1=df.select("product_Id","revenue").groupBy(col("product_id")).agg(sum(col("revenue")).alias("total_revenue").orderBy(col("total_revenue"),"desc")
+
+df1.show(n=5)
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Build an Cloud Data Solution to perform the following tasks:
+- Daily ingestion of CSV files from cloud storage.
+storage-S3(folder)
+SNS topics
+send a trigger to data_pipeline -queue( )
+
+two ways to trigger job:
+1.cron based:
+2.realtime- sns notification triggers
+
+
+S3>> SNS topic>>AWS lambda fn>> AWS Glue>>landing zone for DWH>>
+stg>>base layer
+
+
+- Implement data quality checks to ensure data integrity from the source system.
+	Aduit job: lambda fn- inserted counts from source and counts inserted filtered,:
+
+
+- Apply business logic and harmonize the data.
+		lambda-Business Logics validated
+
+
+- Load the processed data into a SQL-based database.
+		After loading the DWH
+		glue scipts 
+		Data-marts or Dashboards
+
+- Send an email upon process completion
+		Send status for success- SNS
+	
+S3>> SNS topic>>AWS lambda fn>> AWS Glue>>landing zone for DWH>>
+stg>>base layer>>
+
