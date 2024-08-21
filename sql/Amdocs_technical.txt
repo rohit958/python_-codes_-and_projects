@@ -1,0 +1,35 @@
+AMDOCS Interview Data Engineer:-
+Python
+1. Difference between Tuple, list.
+2. Reverse sting without built-in funtions
+3. create an empty tuple
+4. string="AMDOCS"
+	convert into list containg all letter of string
+5. reverse a string without using built in funtions.	
+
+
+SQL:-
+1. find the employee details from eployee table which has the average salary.
+2. Find the details of employee which has 3rd Highest salary
+3. how joining works
+table 1   table 2
+id			id
+1			1
+1			1
+Null		1	
+3			2
+4			4
+
+give results for Inner and Left join	
+
+Pyspark:-
+1. Pyspark structure and advantages
+2. Coalesce and cache()
+3. Difference btn actions and transformation
+4. Spark code optimistaion
+5. when we use broadcast joins
+
+Hive:-
+1. Bucketing vs partitioning
+2. external and manged tables
+
