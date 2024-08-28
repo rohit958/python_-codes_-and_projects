@@ -1,6 +1,6 @@
 test_string = "Hello!, World! 123 2024 Welcome' to 2024 Hello!"
 #remove every ! except last one
-#remove ever number except last 2024
+#remove every number except last 2024
 
 
 res=test_string.replace("!","",(test_string.count("!")-1))
