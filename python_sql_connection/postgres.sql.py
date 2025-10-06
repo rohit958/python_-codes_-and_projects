@@ -1,20 +1,19 @@
+# ...existing code...
 import psycopg2
-
-def connect_to_postgres():
-    try:
-        connection = psycopg2.connect(
-            host="jdbc:postgresql://localhost:5432/rohitkushah",
-            database="rohitkushah",
-            user="rohitkushah",
-            password="Palak@1999"
-        )
-        print("Connection successful")
-        return connection
-    except Exception as e:
-        print(f"Error connecting to PostgreSQL: {e}")
-        return None
+from urllib.parse import quote_plus
 
 if __name__ == "__main__":
-    conn = connect_to_postgres()
-    if conn:
-        conn.close()
+    user = "rohitkushah"
+    password = quote_plus("Palak@1999")  # '@' becomes '%40'
+    host = "localhost"
+    port = 5432
+    dbname = "rohitkushah"
+
+    dsn = f"postgresql://{user}:{password}@{host}:{port}/{dbname}"
+    with psycopg2.connect(dsn) as conn:
+        with conn.cursor() as cur:
+            cur.execute("SELECT version();")
+            row = cur.fetchone()
+            if row:
+                print(row[0])
+# ...existing code...
