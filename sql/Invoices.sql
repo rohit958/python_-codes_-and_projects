@@ -12,3 +12,32 @@ select sum(quantity) from invoices
 where item_name ='Smartphone' and extract(month from invoice_date)=07;
 
 -- 
+
+select * from invoices;
+
+
+-- purchasing of customers 
+select *,dense_rank() over( partition by customer_name order by total_amount desc) from invoices;
+
+--running total of each customer
+
+select *, sum(total_amount) over( partition by customer_name order by invoice_date) from invoices;
+
+
+--lead and lag 
+select *, lead(total_amount,1,0) over(partition by customer_name order by invoice_date) from invoices ;
+
+select *, lag(total_amount,1,0) over(partition by customer_name order by invoice_date) from invoices ;
+
+
+--three months moving average
+with monthly_sum as(
+select extract(month from invoice_date) as month, sum(total_amount) as monthly_total from invoices
+group by 1)
+
+select month, round(avg(monthly_total) over(rows between 1 preceding and 1 following),2) as three_month_mov_avg
+from monthly_sum
+order by 1;
+
+
+

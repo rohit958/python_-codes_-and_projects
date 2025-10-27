@@ -1,0 +1,1102 @@
+[
+  {
+    "timestamp": "2025-10-12T12:23:47.126864",
+    "partition": 0,
+    "offset": 293,
+    "data": {
+      "id": 1,
+      "name": "Dev Singh",
+      "age": 50,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.128214",
+    "partition": 0,
+    "offset": 294,
+    "data": {
+      "id": 2,
+      "name": "Tara Kumar",
+      "age": 37,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.128662",
+    "partition": 0,
+    "offset": 295,
+    "data": {
+      "id": 3,
+      "name": "Sahil Gupta",
+      "age": 29,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.129046",
+    "partition": 0,
+    "offset": 296,
+    "data": {
+      "id": 4,
+      "name": "Tara Kumar",
+      "age": 73,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.129415",
+    "partition": 0,
+    "offset": 297,
+    "data": {
+      "id": 5,
+      "name": "Riya Shah",
+      "age": 40,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.129788",
+    "partition": 0,
+    "offset": 298,
+    "data": {
+      "id": 6,
+      "name": "Vikram Gupta",
+      "age": 23,
+      "city": "Jaipur"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.130174",
+    "partition": 0,
+    "offset": 299,
+    "data": {
+      "id": 7,
+      "name": "Manish Gupta",
+      "age": 73,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.130558",
+    "partition": 0,
+    "offset": 300,
+    "data": {
+      "id": 8,
+      "name": "Kiran Kumar",
+      "age": 43,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.130959",
+    "partition": 0,
+    "offset": 301,
+    "data": {
+      "id": 9,
+      "name": "Dev Shah",
+      "age": 63,
+      "city": "Mumbai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.131394",
+    "partition": 0,
+    "offset": 302,
+    "data": {
+      "id": 10,
+      "name": "Dev Joshi",
+      "age": 42,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.131817",
+    "partition": 0,
+    "offset": 303,
+    "data": {
+      "id": 11,
+      "name": "Anjali Shah",
+      "age": 66,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.132471",
+    "partition": 0,
+    "offset": 304,
+    "data": {
+      "id": 12,
+      "name": "Rohit Verma",
+      "age": 55,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.133509",
+    "partition": 0,
+    "offset": 305,
+    "data": {
+      "id": 13,
+      "name": "Dev Singh",
+      "age": 67,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.134359",
+    "partition": 0,
+    "offset": 306,
+    "data": {
+      "id": 14,
+      "name": "Rahul Gupta",
+      "age": 54,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.134978",
+    "partition": 0,
+    "offset": 307,
+    "data": {
+      "id": 15,
+      "name": "Riya Gupta",
+      "age": 25,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.135577",
+    "partition": 0,
+    "offset": 308,
+    "data": {
+      "id": 16,
+      "name": "Vikram Shah",
+      "age": 60,
+      "city": "Ahmedabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.136060",
+    "partition": 0,
+    "offset": 309,
+    "data": {
+      "id": 17,
+      "name": "Rohit Kumar",
+      "age": 55,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.136683",
+    "partition": 0,
+    "offset": 310,
+    "data": {
+      "id": 18,
+      "name": "Kiran Bose",
+      "age": 25,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.137384",
+    "partition": 0,
+    "offset": 311,
+    "data": {
+      "id": 19,
+      "name": "Rohit Kumar",
+      "age": 70,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.138090",
+    "partition": 0,
+    "offset": 312,
+    "data": {
+      "id": 20,
+      "name": "Riya Verma",
+      "age": 32,
+      "city": "Ahmedabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.138899",
+    "partition": 0,
+    "offset": 313,
+    "data": {
+      "id": 21,
+      "name": "Sneha Patel",
+      "age": 46,
+      "city": "Kolkata"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.139578",
+    "partition": 0,
+    "offset": 314,
+    "data": {
+      "id": 22,
+      "name": "Riya Gupta",
+      "age": 54,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.140335",
+    "partition": 0,
+    "offset": 315,
+    "data": {
+      "id": 23,
+      "name": "Rohit Patel",
+      "age": 53,
+      "city": "Ahmedabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.142238",
+    "partition": 0,
+    "offset": 316,
+    "data": {
+      "id": 24,
+      "name": "Manish Bose",
+      "age": 60,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.143240",
+    "partition": 0,
+    "offset": 317,
+    "data": {
+      "id": 25,
+      "name": "Rahul Singh",
+      "age": 34,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.144121",
+    "partition": 0,
+    "offset": 318,
+    "data": {
+      "id": 26,
+      "name": "Isha Verma",
+      "age": 23,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.145273",
+    "partition": 0,
+    "offset": 319,
+    "data": {
+      "id": 27,
+      "name": "Dev Kumar",
+      "age": 75,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.146065",
+    "partition": 0,
+    "offset": 320,
+    "data": {
+      "id": 28,
+      "name": "Neha Rao",
+      "age": 48,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.146850",
+    "partition": 0,
+    "offset": 321,
+    "data": {
+      "id": 29,
+      "name": "Isha Verma",
+      "age": 40,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.147663",
+    "partition": 0,
+    "offset": 322,
+    "data": {
+      "id": 30,
+      "name": "Vikram Rao",
+      "age": 18,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.148386",
+    "partition": 0,
+    "offset": 323,
+    "data": {
+      "id": 31,
+      "name": "Manish Shah",
+      "age": 64,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.149243",
+    "partition": 0,
+    "offset": 324,
+    "data": {
+      "id": 32,
+      "name": "Riya Kumar",
+      "age": 38,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.150095",
+    "partition": 0,
+    "offset": 325,
+    "data": {
+      "id": 33,
+      "name": "Manish Bose",
+      "age": 26,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.150945",
+    "partition": 0,
+    "offset": 326,
+    "data": {
+      "id": 34,
+      "name": "Anjali Patel",
+      "age": 30,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.151728",
+    "partition": 0,
+    "offset": 327,
+    "data": {
+      "id": 35,
+      "name": "Sneha Patel",
+      "age": 34,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.152480",
+    "partition": 0,
+    "offset": 328,
+    "data": {
+      "id": 36,
+      "name": "Vikram Joshi",
+      "age": 41,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.153624",
+    "partition": 0,
+    "offset": 329,
+    "data": {
+      "id": 37,
+      "name": "Dev Rao",
+      "age": 46,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.154762",
+    "partition": 0,
+    "offset": 330,
+    "data": {
+      "id": 38,
+      "name": "Riya Patel",
+      "age": 40,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.155589",
+    "partition": 0,
+    "offset": 331,
+    "data": {
+      "id": 39,
+      "name": "Isha Bose",
+      "age": 21,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.156648",
+    "partition": 0,
+    "offset": 332,
+    "data": {
+      "id": 40,
+      "name": "Kiran Bose",
+      "age": 31,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.157482",
+    "partition": 0,
+    "offset": 333,
+    "data": {
+      "id": 41,
+      "name": "Manish Kumar",
+      "age": 51,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.158187",
+    "partition": 0,
+    "offset": 334,
+    "data": {
+      "id": 42,
+      "name": "Kiran Singh",
+      "age": 28,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.158871",
+    "partition": 0,
+    "offset": 335,
+    "data": {
+      "id": 43,
+      "name": "Rahul Verma",
+      "age": 73,
+      "city": "Kolkata"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.159555",
+    "partition": 0,
+    "offset": 336,
+    "data": {
+      "id": 44,
+      "name": "Neha Bose",
+      "age": 47,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.160313",
+    "partition": 0,
+    "offset": 337,
+    "data": {
+      "id": 45,
+      "name": "Pooja Verma",
+      "age": 61,
+      "city": "Mumbai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.161028",
+    "partition": 0,
+    "offset": 338,
+    "data": {
+      "id": 46,
+      "name": "Vikram Mehta",
+      "age": 35,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.161758",
+    "partition": 0,
+    "offset": 339,
+    "data": {
+      "id": 47,
+      "name": "Dev Gupta",
+      "age": 50,
+      "city": "Ahmedabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.162486",
+    "partition": 0,
+    "offset": 340,
+    "data": {
+      "id": 48,
+      "name": "Anjali Mehta",
+      "age": 29,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.163204",
+    "partition": 0,
+    "offset": 341,
+    "data": {
+      "id": 49,
+      "name": "Tara Mehta",
+      "age": 68,
+      "city": "Jaipur"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.163936",
+    "partition": 0,
+    "offset": 342,
+    "data": {
+      "id": 50,
+      "name": "Rahul Mehta",
+      "age": 22,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.164678",
+    "partition": 0,
+    "offset": 343,
+    "data": {
+      "id": 51,
+      "name": "Rahul Gupta",
+      "age": 44,
+      "city": "Jaipur"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.165438",
+    "partition": 0,
+    "offset": 344,
+    "data": {
+      "id": 52,
+      "name": "Vikram Verma",
+      "age": 46,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.166209",
+    "partition": 0,
+    "offset": 345,
+    "data": {
+      "id": 53,
+      "name": "Dev Shah",
+      "age": 29,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.167176",
+    "partition": 0,
+    "offset": 346,
+    "data": {
+      "id": 54,
+      "name": "Amit Kumar",
+      "age": 27,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.167958",
+    "partition": 0,
+    "offset": 347,
+    "data": {
+      "id": 55,
+      "name": "Riya Mehta",
+      "age": 63,
+      "city": "Jaipur"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.169288",
+    "partition": 0,
+    "offset": 348,
+    "data": {
+      "id": 56,
+      "name": "Isha Gupta",
+      "age": 27,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.170083",
+    "partition": 0,
+    "offset": 349,
+    "data": {
+      "id": 57,
+      "name": "Manish Verma",
+      "age": 73,
+      "city": "Jaipur"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.170836",
+    "partition": 0,
+    "offset": 350,
+    "data": {
+      "id": 58,
+      "name": "Tara Joshi",
+      "age": 54,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.171677",
+    "partition": 0,
+    "offset": 351,
+    "data": {
+      "id": 59,
+      "name": "Vikram Gupta",
+      "age": 66,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.172515",
+    "partition": 0,
+    "offset": 352,
+    "data": {
+      "id": 60,
+      "name": "Rohit Verma",
+      "age": 52,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.173416",
+    "partition": 0,
+    "offset": 353,
+    "data": {
+      "id": 61,
+      "name": "Riya Kumar",
+      "age": 62,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.174259",
+    "partition": 0,
+    "offset": 354,
+    "data": {
+      "id": 62,
+      "name": "Rohit Singh",
+      "age": 24,
+      "city": "Mumbai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.175130",
+    "partition": 0,
+    "offset": 355,
+    "data": {
+      "id": 63,
+      "name": "Rahul Joshi",
+      "age": 42,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.176109",
+    "partition": 0,
+    "offset": 356,
+    "data": {
+      "id": 64,
+      "name": "Tara Joshi",
+      "age": 48,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.176898",
+    "partition": 0,
+    "offset": 357,
+    "data": {
+      "id": 65,
+      "name": "Isha Mehta",
+      "age": 53,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.177635",
+    "partition": 0,
+    "offset": 358,
+    "data": {
+      "id": 66,
+      "name": "Sneha Kumar",
+      "age": 44,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.178400",
+    "partition": 0,
+    "offset": 359,
+    "data": {
+      "id": 67,
+      "name": "Manish Gupta",
+      "age": 26,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.179213",
+    "partition": 0,
+    "offset": 360,
+    "data": {
+      "id": 68,
+      "name": "Riya Verma",
+      "age": 41,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.179999",
+    "partition": 0,
+    "offset": 361,
+    "data": {
+      "id": 69,
+      "name": "Dev Kumar",
+      "age": 64,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.180790",
+    "partition": 0,
+    "offset": 362,
+    "data": {
+      "id": 70,
+      "name": "Vikram Patel",
+      "age": 38,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.181614",
+    "partition": 0,
+    "offset": 363,
+    "data": {
+      "id": 71,
+      "name": "Isha Gupta",
+      "age": 29,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.182510",
+    "partition": 0,
+    "offset": 364,
+    "data": {
+      "id": 72,
+      "name": "Pooja Shah",
+      "age": 23,
+      "city": "Kolkata"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.183433",
+    "partition": 0,
+    "offset": 365,
+    "data": {
+      "id": 73,
+      "name": "Anjali Singh",
+      "age": 66,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.184376",
+    "partition": 0,
+    "offset": 366,
+    "data": {
+      "id": 74,
+      "name": "Neha Bose",
+      "age": 67,
+      "city": "Ahmedabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.186049",
+    "partition": 0,
+    "offset": 367,
+    "data": {
+      "id": 75,
+      "name": "Isha Singh",
+      "age": 63,
+      "city": "Kolkata"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.186888",
+    "partition": 0,
+    "offset": 368,
+    "data": {
+      "id": 76,
+      "name": "Tara Joshi",
+      "age": 27,
+      "city": "Hyderabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.187678",
+    "partition": 0,
+    "offset": 369,
+    "data": {
+      "id": 77,
+      "name": "Tara Kumar",
+      "age": 42,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.188459",
+    "partition": 0,
+    "offset": 370,
+    "data": {
+      "id": 78,
+      "name": "Riya Patel",
+      "age": 27,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.189243",
+    "partition": 0,
+    "offset": 371,
+    "data": {
+      "id": 79,
+      "name": "Anjali Shah",
+      "age": 70,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.190041",
+    "partition": 0,
+    "offset": 372,
+    "data": {
+      "id": 80,
+      "name": "Rohit Bose",
+      "age": 19,
+      "city": "Mumbai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.190848",
+    "partition": 0,
+    "offset": 373,
+    "data": {
+      "id": 81,
+      "name": "Isha Mehta",
+      "age": 68,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.191749",
+    "partition": 0,
+    "offset": 374,
+    "data": {
+      "id": 82,
+      "name": "Rohit Mehta",
+      "age": 27,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.192643",
+    "partition": 0,
+    "offset": 375,
+    "data": {
+      "id": 83,
+      "name": "Amit Singh",
+      "age": 58,
+      "city": "Mumbai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.193434",
+    "partition": 0,
+    "offset": 376,
+    "data": {
+      "id": 84,
+      "name": "Rohit Bose",
+      "age": 44,
+      "city": "Ahmedabad"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.194429",
+    "partition": 0,
+    "offset": 377,
+    "data": {
+      "id": 85,
+      "name": "Anjali Patel",
+      "age": 71,
+      "city": "Kolkata"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.195251",
+    "partition": 0,
+    "offset": 378,
+    "data": {
+      "id": 86,
+      "name": "Sneha Bose",
+      "age": 36,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.196085",
+    "partition": 0,
+    "offset": 379,
+    "data": {
+      "id": 87,
+      "name": "Anjali Singh",
+      "age": 62,
+      "city": "Delhi"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.196941",
+    "partition": 0,
+    "offset": 380,
+    "data": {
+      "id": 88,
+      "name": "Dev Mehta",
+      "age": 75,
+      "city": "Chennai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.197753",
+    "partition": 0,
+    "offset": 381,
+    "data": {
+      "id": 89,
+      "name": "Pooja Gupta",
+      "age": 27,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.198628",
+    "partition": 0,
+    "offset": 382,
+    "data": {
+      "id": 90,
+      "name": "Riya Rao",
+      "age": 53,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.199666",
+    "partition": 0,
+    "offset": 383,
+    "data": {
+      "id": 91,
+      "name": "Neha Shah",
+      "age": 26,
+      "city": "Jaipur"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.200528",
+    "partition": 0,
+    "offset": 384,
+    "data": {
+      "id": 92,
+      "name": "Amit Bose",
+      "age": 22,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.201328",
+    "partition": 0,
+    "offset": 385,
+    "data": {
+      "id": 93,
+      "name": "Dev Bose",
+      "age": 49,
+      "city": "Mumbai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.202131",
+    "partition": 0,
+    "offset": 386,
+    "data": {
+      "id": 94,
+      "name": "Amit Rao",
+      "age": 39,
+      "city": "Lucknow"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.203067",
+    "partition": 0,
+    "offset": 387,
+    "data": {
+      "id": 95,
+      "name": "Kiran Kumar",
+      "age": 57,
+      "city": "Pune"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.203897",
+    "partition": 0,
+    "offset": 388,
+    "data": {
+      "id": 96,
+      "name": "Anjali Kumar",
+      "age": 57,
+      "city": "Bangalore"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.204722",
+    "partition": 0,
+    "offset": 389,
+    "data": {
+      "id": 97,
+      "name": "Riya Bose",
+      "age": 40,
+      "city": "Mumbai"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.205562",
+    "partition": 0,
+    "offset": 390,
+    "data": {
+      "id": 98,
+      "name": "Amit Bose",
+      "age": 74,
+      "city": "Jaipur"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.206408",
+    "partition": 0,
+    "offset": 391,
+    "data": {
+      "id": 99,
+      "name": "Kiran Patel",
+      "age": 50,
+      "city": "Kolkata"
+    }
+  },
+  {
+    "timestamp": "2025-10-12T12:23:47.207277",
+    "partition": 0,
+    "offset": 392,
+    "data": {
+      "id": 100,
+      "name": "Vikram Bose",
+      "age": 74,
+      "city": "Pune"
+    }
+  }
+]
