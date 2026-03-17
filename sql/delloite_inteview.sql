@@ -29,3 +29,5 @@ from emp_2020 e2 FULL OUTER JOIN
 emp_2021 e21 on e2.emp_id=e21.emp_id
 where coalesce(e2.designation,'xxx')!=coalesce(e21.designation,'yyy')
 
+
+select * from events e cross join events e1 

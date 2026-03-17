@@ -1,4 +1,4 @@
-s="abcjafefjkajcefeahcafat"
+s="abcjafefjkajcefeahvcafat"
 
 # count number of characters in string
 

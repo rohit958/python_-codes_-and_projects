@@ -16,8 +16,13 @@ where item_name ='Smartphone' and extract(month from invoice_date)=07;
 select * from invoices;
 
 
--- purchasing of customers 
-select *,dense_rank() over( partition by customer_name order by total_amount desc) from invoices;
+--top 3 purchasing of customers 
+with purchases as(
+select customer_name,total_amount ,dense_rank() over( partition by customer_name order by total_amount desc) as highest_purchase from invoices)
+
+select customer_name, total_amount, highest_purchase from purchases
+where highest_purchase<3;
+;
 
 --running total of each customer
 
