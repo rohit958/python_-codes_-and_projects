@@ -26,5 +26,12 @@
  * */
 
 
+--cross join
 select n1.n from numbers n1 ,numbers n2
 where n1.n>=n2.n
+
+
+--self join
+select n1.n from numbers n1 join numbers n2
+on n1.n>=n2.n
+
