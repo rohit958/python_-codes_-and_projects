@@ -1,3 +1,4 @@
+-- last 7 successful runs  ,total runs, last succeful run_id
 WITH last_7 AS (
     SELECT 
         data_set_id,
